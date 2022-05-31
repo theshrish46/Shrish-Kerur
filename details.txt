@@ -1,0 +1,16 @@
+nav bar
+background color #000000
+hover on menu red
+
+linkedin:https://www.linkedin.com/in/shrish-kerur-552584229/
+twitter:https://twitter.com/theshrish46
+Codepen:https://codepen.io/theshrish
+Github:https://github.com/theshrish46
+Gmail:
+
+
+font-family: 'Bebas Neue', cursive;
+
+<div class="logo">
+      <img src="\images\profile2.jpg" alt="images">
+    </div>
