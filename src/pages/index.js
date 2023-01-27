@@ -2,8 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { FaCss3, FaGithub, FaJs, FaReact } from 'react-icons/fa';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { waveimg } from "./../../public/devimg.png";
-import web1 from '../../public/web1.png';
+import devlogo from './../../public/devimg.png';
 
 
 export default function Home() {
@@ -39,7 +38,7 @@ export default function Home() {
           </div>
 
             <div className='py-6 md:w-2/5 md:h-full md:px-10'>
-              <img className='h-96 w-96 border-2 border-black border-solid' src={web1} alt='img'></img>
+              <img className='h-96 w-96 border-2 border-black border-solid' src={devlogo} alt='img'></img>
             </div>
         </section>
 
