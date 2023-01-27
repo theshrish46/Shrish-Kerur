@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import { FaCss3, FaGithub, FaJs, FaReact } from 'react-icons/fa';
+import { FaAtom, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaPython, FaReact } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import Image from 'next/legacy/image';
 import devlogo from './../../public/devimg.png';
@@ -25,8 +26,12 @@ export default function Home() {
             <h3 className='text-2xl text-gray-700 font-medium md:text-4xl dark:text-gray-300'>Shrish Kerur</h3>
 
             <ul className='flex items-center text-lg'>
-              <li className='mx-8 text-gray-700 md:mx-12 dark:text-gray-300'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} /></li>
-              <li><a className='bg-teal-500 text-gray-700 px-3 py-1 rounded-md md:px-6 md:py-3' href='#'>Resume</a></li>
+              <li className='mx-8 text-gray-700 md:mx-12'>
+                <button className='p-3 rounded-full dark:bg-slate-100'>
+                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='dark:bg-slate-100' />
+                </button>
+              </li>
+              <li><a className='bg-teal-500 text-gray-700 font-medium px-3 py-1 rounded-md md:px-6 md:py-3' href='#'>Resume</a></li>
             </ul>
           </nav>
         </section>
@@ -37,7 +42,7 @@ export default function Home() {
           <div className='text-center md:w-3/5 md:text-left'>
             <h2 className='my-3 text-4xl text-gray-700 md:text-5xl dark:text-gray-300'>Hai I am Shrish</h2>
             <span className='text-2xl text-teal-700 font-medium md:text-3xl dark:text-teal-400'>A Front End Developer</span>
-            <p className='my-8 text-xl text-gray-700 md:text-2xl dark:text-gray-300'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p className='my-8 text-xl text-gray-700 md:text-2xl dark:text-gray-300'>I am a passionate Front-End Web Developer. Having good knowledge of JavaScript, React and tailwindcss. I keep sharing about my learning on twitter, and I also write blogs on hashnode. You can have a look at all of my projects and source code on my GitHub account. You can also say a hai to me down below.</p>
           </div>
 
             <div className='relative bg-gradient-to-b from-teal-500 py-6 mx-auto rounded-full overflow-hidden md:w-96 md:h-96 md:px-10'>
@@ -60,14 +65,14 @@ export default function Home() {
           </div>
 
           <div className='py-2 grid grid-cols-2 grid-rows-2 gap-8 md:grid-cols-4 md:gap-24 dark:text-gray-300'>
-            <div className='px-4 mx-auto w-46 h-32 text-2xl'><FaJs size={90} />JavaScript</div>
-            <div className='px-4 mx-auto w-46 h-32 text-2xl'><FaReact size={90} />React</div>
-            <div className='px-4 mx-auto w-46 h-32 text-2xl'><FaCss3 size={90} />CSS</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl'><FaGithub size={90} />GitHub</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl'><FaGithub size={90} />GitHub</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl'><FaGithub size={90} />GitHub</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl'><FaGithub size={90} />GitHub</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl'><FaGithub size={90} />GitHub</div>
+            <div className='px-4 mx-auto w-46 h-32 text-2xl text-amber-400 font-medium dark:text-yellow-400'><FaJs size={90} />JavaScript</div>
+            <div className='px-4 mx-auto w-46 h-32 text-2xl text-cyan-500 font-medium dark:text-cyan-600'><FaReact size={90} />React</div>
+            <div className='px-4 mx-auto w-46 h-32 text-2xl text-blue-500 font-medium dark:text-blue-600'><FaCss3 size={90} />CSS</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-amber-400 font-medium dark:text-yellow-400'><FaPython size={90} />Python</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-orange-500 font-medium dark:text-orange-700'><FaGit size={90} />Git</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-sky-500 font-medium dark:text-sky-700'><SiTailwindcss size={90} />tailwindcss</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-orange-700 font-medium dark:text-orange-500'><FaHtml5 size={90} />HTMl</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-green-700 font-medium text-green-500'><FaAtom size={90} />Atom</div>
           </div>
 
         </section>
