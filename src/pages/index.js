@@ -23,7 +23,7 @@ export default function Home() {
       <main className='px-4 min-h-screen md:px-16 dark:bg-gray-900'>
         <section className='px-3'>
           <nav className='py-10 flex justify-between items-center'>
-            <h3 className='text-2xl text-gray-700 font-medium md:text-4xl dark:text-gray-300'>Shrish Kerur</h3>
+            <h3 className='text-[16px] text-gray-700 font-medium md:text-4xl dark:text-gray-300'>Shrish Kerur</h3>
 
             <ul className='flex items-center text-lg'>
               <li className='mx-8 text-gray-700 md:mx-12'>
@@ -45,7 +45,7 @@ export default function Home() {
             <p className='my-8 text-xl text-gray-700 md:text-2xl dark:text-gray-300'>I am a passionate Front-End Web Developer. Having good knowledge of JavaScript, React and tailwindcss. I keep sharing about my learning on twitter, and I also write blogs on hashnode. You can have a look at all of my projects and source code on my GitHub account. You can also say a hai to me down below.</p>
           </div>
 
-            <div className='relative bg-gradient-to-b from-teal-500 py-6 mx-auto rounded-full overflow-hidden md:w-96 md:h-96 md:px-10'>
+            <div className='relative bg-gradient-to-b from-teal-500 py-6 mx-auto w-60 h-60 rounded-full overflow-hidden md:w-96 md:h-96 md:px-10'>
               <Image 
                 layout='fill'
                 objectFit='cover'
@@ -86,22 +86,22 @@ export default function Home() {
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-3xl text-gray-800 font-semibold'>Portfolio Project</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>Portfolio Project</span>
             </div>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-3xl text-gray-800 font-semibold'>E-Commerce Project</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>E-Commerce Project</span>
             </div>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-3xl text-gray-800 font-semibold'>Personal Landing Page</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>Personal Landing Page</span>
             </div>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-3xl text-gray-800 font-semibold'>To-Do App</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>To-Do App</span>
             </div>
 
           </div>
