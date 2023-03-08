@@ -6,6 +6,8 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import Image from 'next/legacy/image';
 import devlogo from './../../public/devimg.png';
 import { useState } from 'react';
+import home from './../../public/home.png';
+
 
 
 export default function Home() {
@@ -90,7 +92,9 @@ export default function Home() {
             </div>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
-              <div></div>
+              <div>
+                <img src={home} alt='home'/>
+              </div>
               <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>E-Commerce Project</span>
             </div>
 
