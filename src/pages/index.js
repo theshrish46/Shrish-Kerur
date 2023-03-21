@@ -4,9 +4,9 @@ import { FaAtom, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaPython, FaReact } fro
 import { SiTailwindcss } from 'react-icons/si';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import Image from 'next/legacy/image';
-import devlogo from './../../public/devimg.png';
+import devimg from './../../public/assets/devimg.png'
 import { useState } from 'react';
-import home from './../../public/home.png';
+import flip1 from './../../public/ecommerce/flip1.png';
 
 
 
@@ -51,7 +51,7 @@ export default function Home() {
               <Image 
                 layout='fill'
                 objectFit='cover'
-                src={devlogo}
+                src={devimg}
                 alt="logo"
                 sizes={180}
               />
@@ -67,14 +67,14 @@ export default function Home() {
           </div>
 
           <div className='py-2 grid grid-cols-2 grid-rows-2 gap-8 md:grid-cols-4 md:gap-24 dark:text-gray-300'>
-            <div className='px-4 mx-auto w-46 h-32 text-2xl text-amber-400 font-medium dark:text-yellow-400'><FaJs size={90} />JavaScript</div>
-            <div className='px-4 mx-auto w-46 h-32 text-2xl text-cyan-500 font-medium dark:text-cyan-600'><FaReact size={90} />React</div>
-            <div className='px-4 mx-auto w-46 h-32 text-2xl text-blue-500 font-medium dark:text-blue-600'><FaCss3 size={90} />CSS</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-amber-400 font-medium dark:text-yellow-400'><FaPython size={90} />Python</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-orange-500 font-medium dark:text-orange-700'><FaGit size={90} />Git</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-sky-500 font-medium dark:text-sky-700'><SiTailwindcss size={90} />tailwindcss</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-orange-700 font-medium dark:text-orange-500'><FaHtml5 size={90} />HTMl</div>
-            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-green-700 font-medium text-green-500'><FaAtom size={90} />Atom</div>
+            <div className='px-4 mx-auto w-46 h-32 text-2xl text-yellow-500 font-medium dark:text-yellow-400'><FaJs size={90} />JavaScript</div>
+            <div className='px-4 mx-auto w-46 h-32 text-2xl text-cyan-400 font-medium dark:text-cyan-600'><FaReact size={90} />React</div>
+            <div className='px-4 mx-auto w-46 h-32 text-2xl text-blue-600 font-medium dark:text-blue-600'><FaCss3 size={90} />CSS</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-yellow-400 font-medium dark:text-yellow-400'><FaPython size={90} />Python</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-orange-600 font-medium dark:text-orange-700'><FaGit size={90} />Git</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-sky-600 font-medium dark:text-sky-700'><SiTailwindcss size={90} />tailwindcss</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-orange-500 font-medium dark:text-orange-500'><FaHtml5 size={90} />HTMl</div>
+            <div className='px-4 mx-auto w-46 h-fu32 text-2xl text-green-500 font-medium text-green-500'><FaAtom size={90} />Atom</div>
           </div>
 
         </section>
@@ -84,28 +84,45 @@ export default function Home() {
               <h3 className='text-4xl text-teal-700 font-medium md:text-6xl md:py-4 dark:text-teal-400'>Work</h3>
             </div>
 
-          <div className='grid grid-cols-1 gap-8 md:grid-cols-2 md:justify-items-center'>
+          <div className='grid grid-cols-1 gap-8 md:grid-cols-3 md:justify-items-center'>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>Portfolio Project</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-2xl'>Portfolio Project</span>
             </div>
 
-            <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
+            <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12 relative'>
               <div>
-                <img src={home} alt='home'/>
+                <Image 
+                  src={flip1}
+                  className='blur-[0.03rem] hover:blur-none rounded-t-2xl'
+                  // layout='fill'
+                  objectFit='cover'
+                />
               </div>
-              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>E-Commerce Project</span>
+              <span className='text-2xl text-black font-semibold md:text-2xl'>e-Commerce Project</span>
             </div>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>Personal Landing Page</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-2xl'>Personal Landing Page</span>
             </div>
 
             <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
               <div></div>
-              <span className='text-2xl text-gray-800 font-semibold md:text-3xl'>To-Do App</span>
+              <span className='text-2xl text-gray-800 font-semibold md:text-2xl'>To-Do App</span>
+            </div>
+
+            
+            <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
+              <div></div>
+              <span className='text-2xl text-gray-800 font-semibold md:text-2xl'>To-Do App</span>
+            </div>
+
+
+            <div className='w-full h-64 bg-teal-200 flex flex-col justify-center items-center rounded-2xl md:w-10/12'>
+              <div></div>
+              <span className='text-2xl text-gray-800 font-semibold md:text-2xl'>To-Do App</span>
             </div>
 
           </div>
