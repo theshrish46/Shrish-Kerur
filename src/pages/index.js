@@ -1,12 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import { FaAtom, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import Image from 'next/legacy/image';
-import devimg from './../../public/assets/devimg.png'
 import { useState } from 'react';
-import flip1 from './../../public/ecommerce/flip1.png';
 import Header from '@/components/Header';
 import Intro from '@/components/Intro';
 
