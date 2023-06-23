@@ -25,13 +25,13 @@ const Header = () => {
         ' />
 
         <div className='flex justify-center items-center'>
-          <button onClick={handleActive} className='mx-2'>{
+          <button onClick={handleActive} className='mx-2 text-white'>{
             active ?
               <FaSun size={20} className='transition-all duration-1000 hover:w-6 hover:h-6 hover:animate-spin' /> :
               <FaMoon size={20} className='transition-all -rotate-180 duration-1000 hover:-rotate-0 hover:w-6 hover:h-6' />
           }</button>
 
-          <button className='mx-2 px-2 py-1 text-white font-semibold bg-sky-500 hover:bg-sky-400 rounded-md
+          <button className='mx-2 px-2 py-1 text-white font-semibold bg-sky-600 hover:bg-sky-500 rounded-md
           transition-all hover:-translate-y-1
           
           '>

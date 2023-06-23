@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Intro from '@/components/Intro';
+import Footer from '@/components/Footer';
 
 
 
@@ -16,7 +17,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/public/profile/unnamed.jpg" />
       </Head>
-      <body>
+      <body className="bg-[url('./../../public/bgs/wave1.png')]
+      bg-no-repeat bg-cover
+      ">
         <header className='w-full h-auto py-3 px-2 mx-auto
         sm:w-[620px]
         md:w-[720px]
@@ -26,11 +29,23 @@ export default function Home() {
         '>
           <Header />
         </header>
-        <main className='w-full h-auto py-3 mx-auto'>
+        <main className='w-full h-auto py-3 px-3 mx-auto
+        sm:w-[620px]
+        md:w-[720px]
+        lg:w-[1024px]
+        xl:w-[1280px]
+        2xl:w-[1536px]
+        '>
           <Intro />
         </main>
-        <footer className='w-full h-40'>
-
+        <footer className='w-full h-40 py-3 px-3 mx-auto
+        sm:w-[620px]
+        md:w-[720px]
+        lg:w-[1024px]
+        xl:w-[1280px]
+        2xl:w-[1536px]
+        '>
+          <Footer />
         </footer>
       </body>
     </div>
