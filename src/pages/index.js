@@ -17,7 +17,12 @@ export default function Home() {
         <link rel="icon" href="/public/profile/unnamed.jpg" />
       </Head>
       <body>
-        <header className='w-full h-auto py-3 mx-auto
+        <header className='w-full h-auto py-3 px-2 mx-auto
+        sm:w-[620px]
+        md:w-[720px]
+        lg:w-[1024px]
+        xl:w-[1280px]
+        2xl:w-[1536px]
         '>
           <Header />
         </header>
