@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Intro from '@/components/Intro';
 import Footer from '@/components/Footer';
+import Project from '@/components/Project';
 
 
 
@@ -37,6 +38,9 @@ export default function Home() {
         2xl:w-[1536px]
         '>
           <Intro />
+          <Project />
+          <Project />
+          <Project />
         </main>
         <footer className='w-full h-40 py-3 px-3 mx-auto
         sm:w-[620px]
