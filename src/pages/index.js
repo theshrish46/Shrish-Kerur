@@ -39,8 +39,6 @@ export default function Home() {
         '>
           <Intro />
           <Project />
-          <Project />
-          <Project />
         </main>
         <footer className='w-full h-40 py-3 px-3 mx-auto
         sm:w-[620px]
