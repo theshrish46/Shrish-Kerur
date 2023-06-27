@@ -28,5 +28,35 @@ export const data = [
             pr3: '/public/blog website/three.png',
             pr4: '/public/blog website/four.png',
         }
+    },
+    {
+        name: 'Blogging Site',
+        desc: 'This is a simple Blogging application for personal use. This site is still in progress however I have built the UI and soon will be working on the backend of the project',
+        images: {
+            pr1: '/public/blog website/one.png',
+            pr2: '/public/blog website/two.png',
+            pr3: '/public/blog website/three.png',
+            pr4: '/public/blog website/four.png',
+        }
+    },
+    {
+        name: 'Blogging Site',
+        desc: 'This is a simple Blogging application for personal use. This site is still in progress however I have built the UI and soon will be working on the backend of the project',
+        images: {
+            pr1: '/public/blog website/one.png',
+            pr2: '/public/blog website/two.png',
+            pr3: '/public/blog website/three.png',
+            pr4: '/public/blog website/four.png',
+        }
+    },
+    {
+        name: 'Blogging Site',
+        desc: 'This is a simple Blogging application for personal use. This site is still in progress however I have built the UI and soon will be working on the backend of the project',
+        images: {
+            pr1: '/public/blog website/one.png',
+            pr2: '/public/blog website/two.png',
+            pr3: '/public/blog website/three.png',
+            pr4: '/public/blog website/four.png',
+        }
     }
 ]

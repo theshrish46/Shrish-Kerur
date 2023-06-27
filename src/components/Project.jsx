@@ -20,6 +20,10 @@ const ulstyle = {
     fontSize: '16px'
 }
 
+const variants = {
+    hover: { scale: 1.25, backgroundColor: 'green' },
+}
+
 const Project = () => {
     return (
         <>
@@ -30,10 +34,11 @@ const Project = () => {
                 {
                     data.map((item, index) => (
                         <motion.div
+                            variants={variants}
                             initial={{ opacity: 0, translateY: 50 }}
                             animate={{ opacity: 1, translateY: 0 }}
                             transition={{ duration: 2 }}
-                            className='my-4 mx-auto px-3 py-2 w-11/12 h-auto sm:w-72 lg:w-80
+                            className='my-4 mx-auto px-3 py-2 w-11/12 h-auto sm:w-5/12 lg:w-3/12 cursor-pointer
                             shadow-md shadow-white rounded-md
                             '
                         >
