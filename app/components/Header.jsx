@@ -1,27 +1,29 @@
-import Link from "next/link";
-import React from "react";
+// Header.js
 
-export const Header = () => {
+import React from "react";
+import Link from "next/link";
+
+const Header = () => {
   return (
-    <>
-      <div className="w-full bg-red-400">
-        <div className="continer h-28 flex justify-around items-center">
-          <div>
-            <Link href={"/"}>Shrish Kerur</Link>
-          </div>
-          <ul className="flex justify-center items-center gap-5">
-            <li>
-              <Link href={"/about"}>About</Link>
+    <header className="py-4 px-8">
+      <div className="flex items-center justify-between">
+        <div className="text-2xl font-bold">Your Name</div>
+        <nav>
+          <ul className="flex space-x-4">
+            <li className="hover:text-gray-400 transition duration-300">
+              <Link href="#about">About</Link>
             </li>
-            <li>
-              <Link href={"/project"}>Project</Link>
+            <li className="hover:text-gray-400 transition duration-300">
+              <Link href="#skills">Skills</Link>
             </li>
-            <li>
-              <Link href={"/contact"}>Contact</Link>
+            <li className="hover:text-gray-400 transition duration-300">
+              <Link href="#projects">Projects</Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </>
+    </header>
   );
 };
+
+export default Header;
