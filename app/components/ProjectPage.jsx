@@ -13,14 +13,52 @@ const projects = [
     githubLink: 'https://github.com/yourusername/project1',
     liveLink: 'https://project1-live-link.com',
     techStack: ['React', 'Node.js', 'Express.js', 'MongoDB']
+  },
+  {
+    title: 'Project 1',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ut libero pretium facilisis.',
+    githubLink: 'https://github.com/yourusername/project1',
+    liveLink: 'https://project1-live-link.com',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB']
+  },
+  {
+    title: 'Project 1',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ut libero pretium facilisis.',
+    githubLink: 'https://github.com/yourusername/project1',
+    liveLink: 'https://project1-live-link.com',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB']
+  },
+  {
+    title: 'Project 1',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ut libero pretium facilisis.',
+    githubLink: 'https://github.com/yourusername/project1',
+    liveLink: 'https://project1-live-link.com',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB']
+  },
+  {
+    title: 'Project 1',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ut libero pretium facilisis.',
+    githubLink: 'https://github.com/yourusername/project1',
+    liveLink: 'https://project1-live-link.com',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB']
+  },
+  {
+    title: 'Project 1',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ut libero pretium facilisis.',
+    githubLink: 'https://github.com/yourusername/project1',
+    liveLink: 'https://project1-live-link.com',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB']
   }
-  // Add more projects as needed
 ]
 
 export const ProjectsPage = () => {
   return (
     <div className='min-h-screen flex flex-col'>
-      <Header />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

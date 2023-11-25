@@ -9,3 +9,11 @@
 body {
   @apply bg-gray-900;
 }
+
+.bgimage {
+  width: 100%;
+  background-image: url(./../public/project/ecommerce.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
