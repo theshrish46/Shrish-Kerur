@@ -40,7 +40,7 @@ export default function Home() {
         <section id="about" className="my-4 text-center mx-1">
           <h2 className="font-semibold md:text-2xl md:font-medium">About</h2>
           <p>
-            I'm a backend developer specializing in building scalable
+            I&apos;m a backend developer specializing in building scalable
             server-side applications. Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Aliquid possimus architecto fugit omnis recusandae
             neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
