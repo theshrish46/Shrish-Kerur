@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  @apply w-11/12 mx-auto;
-}
 
 body {
-  @apply bg-gray-900;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.bgimage {
-  width: 100%;
-  background-image: url(./../public/project/ecommerce.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
