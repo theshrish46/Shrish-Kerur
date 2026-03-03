@@ -13,16 +13,17 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Shrish Kerur",
+  title: "Shrish Kerur | AI Engineer",
+  description: "AI Systems Architect specializing in Agents and Deep Learning.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
-        <main>{children}</main>
+        <main className="px-4 py-12 md:py-20">{children}</main>
       </body>
     </html>
   );
