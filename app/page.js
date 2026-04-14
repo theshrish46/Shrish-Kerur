@@ -2,18 +2,38 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "EduRAG - Question Generator",
-    tech: "Python, LangChain, ChromaDB, Tesseract OCR, Google Vision",
+    title: "Synthetix — Autonomous Git Agent",
+    tech: "Python · LangGraph · Groq · PyGithub",
     description:
-      "A project that reads syllabus PDFs and generates question papers based on different difficulty levels. I used Tesseract and Regex to clean the text and Google Vision to read and grade handwritten student answers.",
-    link: "https://github.com/theshrish46/edu-rag", 
+      "An agentic AI built with LangGraph that accepts a GitHub repository URL and autonomously refactors all programming files. Uses a state machine with two Groq-powered LLMs — one for refactoring and one for review — with a self-correction loop that re-refactors any file scoring below 0.5. Once all files are processed, it raises a pull request to the main branch.",
+    link: "https://github.com/theshrish46/synthetix",
   },
   {
-    title: "LegalRAG - Document Chat",
-    tech: "LangChain, Qdrant, FlashRank, DeepEval, Docker",
+    title: "LegalRAG — Document Audit Tool",
+    tech: "Python · LangChain · Chroma · FlashRank · DeepEval · Docker",
     description:
-      "A RAG-based app to chat with legal files. I used Qdrant for the vector database and FlashRank for better search results. I also used DeepEval to test the accuracy and compared the results with ChatGPT.",
+      "A RAG application for analysing legal documents using Qdrant for vector storage and FlashRank for re-ranking retrieved chunks. Evaluated using DeepEval across four RAG metrics — all scoring above 0.8.",
     link: "https://github.com/theshrish46/legal-rag",
+  },
+  {
+    title: "EduRAG — Assessment Generator",
+    tech: "Python · LangChain · ChromaDB · Google Vision · Tesseract · Gemini",
+    description:
+      "A tool that processes syllabus PDFs to extract modules, course outcomes, and Bloom's Taxonomy levels. Generates question papers based on user-specified format and difficulty. Students can upload a photo of handwritten answers and receive LLM-powered feedback via Google Vision and Gemini.",
+    link: "https://github.com/theshrish46/edurag",
+  },
+];
+
+const education = [
+  {
+    degree: "Master of Computer Applications (MCA)",
+    institution: "Bangalore Institute Of Technology",
+    year: "2024 — Present",
+  },
+  {
+    degree: "Bachelor of Computer Applications (BCA)",
+    institution: "Basaveshwara Science College",
+    year: "2021 — 2024",
   },
 ];
 
@@ -21,54 +41,81 @@ export default function Home() {
   return (
     <div className="flex justify-center font-sans p-6">
       <div className="w-full max-w-2xl">
-        {/* HEADER - Simple & Honest */}
+        {/* HEADER */}
         <header className="mb-12 border-b border-black pb-8">
-          <h1 className="text-3xl font-bold tracking-tight uppercase">Shrish Kerur</h1>
+          <h1 className="text-3xl font-bold tracking-tight uppercase">
+            Shrish Kerur
+          </h1>
           <p className="font-mono text-xs mt-2 text-gray-600 uppercase tracking-widest">
-            AI ENGINEER | DATA & STATISTICS | LLM IMPLEMENTATIONS
+            AI Developer &nbsp;|&nbsp; Generative AI & Agentic Systems
+            &nbsp;|&nbsp; Python
           </p>
         </header>
 
-        {/* ABOUT - Straightforward builder intro */}
-        {/* ABOUT - Grounded, tool-focused, and honest */}
+        {/* ABOUT */}
         <section id="about" className="mb-12">
           <h2 className="font-bold text-lg mb-4 uppercase tracking-wider border-b border-gray-200 inline-block">
             Introduction
           </h2>
           <p className="leading-relaxed text-gray-800">
-            I am a developer who focuses on building functional AI applications. 
-            I started my journey in full-stack web development (MERN), but have since pivoted 
-            to Machine Learning and the LLM ecosystem. I rely on a solid theoretical 
-            understanding of <span className="font-semibold">Statistics</span> to help me build and 
-            evaluate RAG pipelines. I enjoy the process of using tools like LangChain, 
-            Vector Databases, and OCR to turn unstructured data into something useful.
+            I am a developer building AI applications and LLM-based systems. I
+            began with full-stack development during my BCA and have since moved
+            into Machine Learning and the LangChain ecosystem during my MCA. I
+            use statistics and mathematics to build and rigorously evaluate my
+            projects. I am currently focused on agentic workflows and model
+            fine-tuning.
           </p>
         </section>
 
-        {/* SKILLS - Just a list of what you can actually use */}
+        {/* EDUCATION */}
+        <section id="education" className="mb-12">
+          <h2 className="font-bold text-lg mb-4 uppercase tracking-wider border-b border-gray-200 inline-block">
+            Education
+          </h2>
+          <div className="space-y-4">
+            {education.map((edu, index) => (
+              <div key={index} className="flex justify-between items-baseline">
+                <div>
+                  <p className="font-bold text-sm">{edu.degree}</p>
+                  <p className="text-sm text-gray-600">{edu.institution}</p>
+                </div>
+                <p className="font-mono text-xs text-gray-600">{edu.year}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* SKILLS */}
         <section id="skills" className="mb-12">
           <h2 className="font-bold text-lg mb-4 uppercase tracking-wider border-b border-gray-200 inline-block">
-            Technical Skills
+            Skills
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 font-mono text-sm">
-            <div>
-              <p className="font-bold text-gray-400 mb-1 underline text-[10px]">Frameworks & AI</p>
-              <ul className="space-y-1">
-                <li>‣ LangChain & LangGraph</li>
-                <li>‣ Scikit-learn, Keras, PyTorch</li>
-                <li>‣ Vector DBs (Qdrant, Chroma)</li>
-                <li>‣ DeepEval (Testing)</li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-bold text-gray-400 mb-1 underline text-[10px]">Core Tech</p>
-              <ul className="space-y-1">
-                <li>‣ Python (NumPy, Pandas, Matplotlib)</li>
-                <li>‣ SQL (Basic to Intermediate)</li>
-                <li>‣ Git / GitHub / Docker</li>
-                <li>‣ OCR (Tesseract / Google Vision)</li>
-              </ul>
-            </div>
+          <div className="font-mono text-sm space-y-3">
+            <p>
+              <span className="text-gray-600 text-[10px] uppercase tracking-wider">
+                AI & ML —{" "}
+              </span>
+              LangChain, LangGraph, RAG, Agentic Workflows, DeepEval, PyTorch,
+              Keras, Scikit-learn
+            </p>
+            <p>
+              <span className="text-gray-600 text-[10px] uppercase tracking-wider">
+                Data & Math —{" "}
+              </span>
+              Python, NumPy, Pandas, Statistics, Linear Algebra, Calculus
+            </p>
+            <p>
+              <span className="text-gray-600 text-[10px] uppercase tracking-wider">
+                Databases —{" "}
+              </span>
+              Qdrant, ChromaDB, PostgreSQL, MongoDB
+            </p>
+            <p>
+              <span className="text-gray-600 text-[10px] uppercase tracking-wider">
+                Tools —{" "}
+              </span>
+              Git, Docker, Linux, Groq, HuggingFace
+            </p>
           </div>
         </section>
 
@@ -85,7 +132,13 @@ export default function Home() {
               >
                 <div className="flex justify-between items-baseline mb-2">
                   <h3 className="font-bold text-lg">{project.title}</h3>
-                  <Link href={project.link} target="_blank" className="text-xs font-mono underline">[VIEW CODE]</Link>
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    className="text-xs font-mono underline"
+                  >
+                    [SOURCE]
+                  </Link>
                 </div>
                 <p className="text-[10px] font-mono mb-3 text-gray-500 uppercase tracking-tighter">
                   {project.tech}
@@ -96,19 +149,33 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="text-[10px] font-mono text-gray-400 mt-6 italic">
-            Currently: Learning how to fine-tune models and use LangGraph.
-          </p>
         </section>
 
         {/* FOOTER */}
         <footer className="pt-8 border-t border-black flex justify-between font-mono text-sm">
           <div className="flex gap-4">
-            <Link href="mailto:theshrish46@gmail.com" className="hover:underline">Email</Link>
-            <Link href="https://github.com/theshrish46" className="hover:underline">GitHub</Link>
-            <Link href="https://linkedin.com/in/shrish-kerur" className="hover:underline">LinkedIn</Link>
+            <Link
+              href="mailto:theshrish46@gmail.com"
+              className="hover:underline"
+            >
+              Email
+            </Link>
+            <Link
+              href="https://github.com/theshrish46"
+              target="_blank"
+              className="hover:underline"
+            >
+              GitHub
+            </Link>
+            <Link
+              href="https://linkedin.com/in/shrish-kerur"
+              target="_blank"
+              className="hover:underline"
+            >
+              LinkedIn
+            </Link>
           </div>
-          <p className="text-gray-400">© 2024</p>
+          <p className="text-gray-400">© 2026</p>
         </footer>
       </div>
     </div>
